@@ -1,48 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    font-family: sans-serif;
 }
 
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+.btn-group-sm > .btn, .btn-group-sm > .btn-group > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.2rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
-/* Button styles */
-button {
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    background-color: #fff;
 }
 
-button:hover {
-    transform: scale(1.05);
+.transaction-details {
+    flex-grow: 1;
 }
 
-/* Transaction color-coded statuses */
-.transaction-pending {
-    background-color: #dc3545 !important; /* Red */
-    color: white;
-}
-
-.transaction-completed {
-    background-color: #28a745 !important; /* Green */
-    color: white;
-}
-
-/* Responsive table design */
-.table-responsive {
-    overflow-x: auto;
-}
-
-table {
-    font-size: 14px;
-}
-
-@media (max-width: 768px) {
-    table {
-        font-size: 12px;
-    }
+.transaction-actions button {
+    margin-left: 10px;
 }
